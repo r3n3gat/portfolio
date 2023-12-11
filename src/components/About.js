@@ -42,7 +42,8 @@ const About = () => {
               mes heures perdues je me suis intéressé au développement
               d&apos;abord par envie personnelle de découverte et de maîtrise
               des choses avant de décider d&apos;en faire mon métier en
-              enrichissant mon expertise en CSS, HTM, javascript et REACT.
+              enrichissant mon expertise en CSS, HTML, javascript, REACT et
+              NextJS.
             </p>
             <p className="pt-3 text-sm leading-6 text-gray-light lg:text-[0.95rem]">
               En formation diplomante chez OpenCLassrooms, j&apos;ai pu
