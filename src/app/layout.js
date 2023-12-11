@@ -22,7 +22,7 @@ export const poppins = Poppins({
 export const metadata = {
   title: "Stevi ENOTO | Portfolio - développeur web front-end",
   description:
-    "Je suis  Stevi ENOTO, Et je suis passionné d'informatique depuis tout petit. Geek à mes heures perdues je me suis intéressé au développement d'abord par envie personnelle de découverte et de maîtrise des choses avant de décider d'en faire mon métier en enrichissant mon expertise en CSS, HTM, javascript et REACT.",
+    "Je suis  Stevi ENOTO,  passionné d'informatique et créateur d'applications web dynamiques.",
   icons: {
     icon: "img/favicon/favicon-32x32.png",
     shortcut: "img/favicon/favicon-16x16.png",
@@ -39,7 +39,7 @@ export const metadata = {
   openGraph: {
     title: "Stevi ENOTO | Portfolio - développeur web front-end",
     description:
-      "Je suis  Stevi ENOTO, Et je suis passionné d'informatique depuis tout petit. Geek à mes heures perdues je me suis intéressé au développement d'abord par envie personnelle de découverte et de maîtrise des choses avant de décider d'en faire mon métier en enrichissant mon expertise en CSS, HTM, javascript et REACT.",
+      "Je suis  Stevi ENOTO,  passionné d'informatique et créateur d'applications web dynamiques.",
     url: "https://www.stevi-enoto.web",
     siteName: "Portfolio Stevi ENOTO, développeur web",
     images: [

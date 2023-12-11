@@ -94,16 +94,17 @@ const Contact = () => {
               >
                 <input
                   type="text"
-                  id="name"
-                  name="name"
-                  value={formData.name}
+                  id="subject"
+                  name="subject"
+                  value={formData.subject}
                   onChange={handleChange}
                   className="border-[rgba(0, 0, 0, 0.1)] peer block w-full resize-none border-b border-solid bg-transparent py-2 pl-[7px] text-[0.8rem] placeholder-transparent outline-none"
                   placeholder="name"
                   required
+                  autocomplete="section-subject"
                 />
                 <label
-                  htmlFor="name"
+                  htmlFor="subject"
                   className="label peer-placeholder-show:text-[0.8rem]peer-placeholder-show:text-gray-dark peer-placeholder-show:top-2 ease absolute left-0 top-0 inline-block text-[0.8rem] text-gray-light transition-all duration-[400ms] peer-valid:-top-4 peer-valid:text-[0.8rem] peer-valid:text-gray-dark  peer-focus:-top-4 peer-focus:text-[0.8rem] peer-focus:text-gray-dark"
                 >
                   Votre nom *
@@ -127,6 +128,7 @@ const Contact = () => {
                   className="border-[rgba(0, 0, 0, 0.1)] peer block w-full resize-none border-b border-solid bg-transparent py-2 pl-[7px] text-[0.8rem] placeholder-transparent  outline-none"
                   placeholder="email"
                   required
+                  autocomplete="email"
                 />
                 <label
                   htmlFor="email"
@@ -153,8 +155,9 @@ const Contact = () => {
                   value={formData.tel}
                   onChange={handleChange}
                   className="border-[rgba(0, 0, 0, 0.1)] peer block w-full resize-none border-b border-solid bg-transparent py-2 pl-[7px] text-[0.8rem] placeholder-transparent outline-none"
-                  placeholder="objet"
+                  placeholder="tel"
                   required
+                  autocomplete="tel"
                 />
                 <label
                   htmlFor="tel"
@@ -175,12 +178,13 @@ const Contact = () => {
                 <input
                   type="text"
                   id="objet"
-                  name="subject"
+                  name="subjet"
                   value={formData.subject}
                   onChange={handleChange}
                   className="border-[rgba(0, 0, 0, 0.1)] peer block w-full resize-none border-b border-solid bg-transparent py-2 pl-[7px] text-[0.8rem] placeholder-transparent outline-none"
                   placeholder="objet"
                   required
+                  autocomplete="objet"
                 />
                 <label
                   htmlFor="objet"
@@ -206,7 +210,7 @@ const Contact = () => {
               value={formData.message}
               onChange={handleChange}
               className="border-[rgba(0, 0, 0, 0.1)] peer mb-14 block h-44 w-full resize-none border-b border-solid bg-transparent py-2 pl-[7px] text-[0.8rem] placeholder-transparent outline-none lg:h-[150px]"
-              placeholder="message"
+              placeholder="Message"
               required
             ></textarea>
 
