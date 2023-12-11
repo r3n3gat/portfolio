@@ -1,0 +1,19 @@
+@font-face {
+  font-family: "Autography";
+  src: url("/fonts/FONT_autography/Autography.otf") format("truetype");
+  font-weight: 5rem;
+  font-style: bold;
+}
+
+@font-face {
+  font-family: "Doctor Glitch";
+  src: url("/fonts/FONT_doctor_glitch/Doctor Glitch.otf") format("opentype");
+  font-weight: 3rem;
+  font-style: bold;
+}
+@font-face {
+  font-family: "DESIGNER";
+  src: url("/fonts/FONT_designer/DESIGNER.otf") format("opentype");
+  font-weight: 3rem;
+  font-style: bold;
+}

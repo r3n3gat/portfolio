@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body::-webkit-scrollbar,
+.scrollBar::-webkit-scrollbar {
+  width: 7px;
+  background-color: #292929;
+}
+body::-webkit-scrollbar-thumb,
+.scrollBar::-webkit-scrollbar-thumb {
+  background-color: #007fff;
+  border-radius: 6px;
+}
+.scrollHidden {
+  overflow-y: hidden;
+}
+.row2 .input_container input[type="tel"] ~ .label.filled {
+  top: -20px;
+  font-size: 0.8rem;
+  color: #292929;
+}
+.row2 .input_container input[type="tel"] ~ .under_line {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  transform: scaleX(0);
+  transition: all 0.3s ease;
+}
+.row2 .input_container input[type="tel"] ~ .under_line.filled {
+  transform: scaleX(1);
+  border-bottom: 1px solid #292929;
+}
+.input_container .underline {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  transform: scaleX(0);
+  transition: all 0.3s ease;
+}
+.input_container input[type="text"]:focus ~ .underline,
+.input_container input[type="text"]:valid ~ .underline,
+.input_container input[type="email"]:focus ~ .underline,
+.input_container input[type="email"]:valid ~ .underline,
+.input_container input[type="tel"]:focus ~ .under_line,
+.input_container input[type="tel"]:valid ~ .under_line,
+.input_container textarea:focus ~ .underline,
+.input_container textarea:valid ~ .underline {
+  border-bottom: 1px solid #292929;
+  transform: scaleX(1);
+}
