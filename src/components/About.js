@@ -40,14 +40,14 @@ const About = () => {
             <p className="pt-3 text-sm leading-6 text-gray-light lg:text-[0.95rem]">
               Je suis passionné d&apos;informatique depuis tout petit. Geek à
               mes heures perdues je me suis intéressé au développement
-              d&apos;abord par envie personnelle de découverte et de maîtrise
-              des choses avant de décider d&apos;en faire mon métier en
-              enrichissant mon expertise en CSS, HTML, javascript, REACT et
-              NextJS.
+              d&apos;abord par envie de découverte et de maîtrise de ce domaine
+              avant de décider d&apos;en faire mon métier en enrichissant mon
+              expertise en CSS, HTML, javascript, REACT et NextJS.
             </p>
             <p className="pt-3 text-sm leading-6 text-gray-light lg:text-[0.95rem]">
-              En formation diplomante chez OpenCLassrooms, j&apos;ai pu
-              développer mes compétences, entre autres, sur{" "}
+              Après l&apos;obtention du diplôme de développeur Web chez
+              OpenCLassrooms, j&apos;ai pu affinier mes compétences, entre
+              autres, sur{" "}
               <span className="inline-block pt-1 leading-4 text-gray-dark shadow-[inset_0px_-6px_0px] shadow-blue-ultra-light">
                 React,
               </span>{" "}
@@ -62,9 +62,10 @@ const About = () => {
               <span className="inline-block pt-1 leading-4 text-gray-dark shadow-[inset_0px_-6px_0px] shadow-blue-ultra-light">
                 Redux
               </span>{" "}
-              afin de pouvoir créer des applications web performantes. Je
-              continue d&apos;apprendre et me former au quotidien afin
-              d&apos;acquérir la maitrise des outils les plus performants.
+              afin de pouvoir créer des applications web performantes. Mon
+              objectif est de continuer à apprendre et me former au quotidien
+              afin d&apos;acquérir la maitrise des outils les plus efficace
+              grâce à Une veille technique assidue.
             </p>
             <p className="pt-3  text-sm leading-6 text-gray-light lg:text-[0.95rem]">
               Je vous laisse parcourir mon portfolio afin de découvrir mes
