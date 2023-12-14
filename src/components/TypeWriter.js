@@ -25,8 +25,8 @@ const fadeInOut = keyframes`
 const randomPosition = () => {
   let x, y;
   if (window.innerWidth < 768) {
-    x = Math.random() * 70; // Réduire pour les mobiles
-    y = Math.random() * 70;
+    x = Math.random() * 50; // Réduire pour les mobiles
+    y = Math.random() * 50;
   } else if (window.innerWidth < 1024) {
     x = Math.random() * 80; // Réduire pour les tablettes
     y = Math.random() * 80;
