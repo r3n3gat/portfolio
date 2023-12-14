@@ -110,6 +110,10 @@ const Navbar = () => {
   // (Utilisé pour éviter des erreurs lorsque le code est exécuté côté serveur (SSR) où `window` n'est pas défini)
   const isDesktop = typeof window !== "undefined" && window.innerWidth >= 1024;
 
+  // Fonction pour fermer le menu sur mobile
+  const handleCloseMenu = () => {
+    setOpen(false);
+  };
   return (
     <nav
       className={`fixed left-0 top-0 z-[100] w-screen transition-all duration-700 ease-out ${
@@ -159,7 +163,11 @@ const Navbar = () => {
           }`}
         >
           {menuItems.map((menuItem) => (
-            <li key={menuItem.section} className={`${styleLink} `}>
+            <li
+              key={menuItem.section}
+              className={`${styleLink} `}
+              onClick={handleCloseMenu}
+            >
               <a
                 href={`#${menuItem.section}`}
                 style={

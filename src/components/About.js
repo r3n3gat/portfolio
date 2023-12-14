@@ -65,7 +65,7 @@ const About = () => {
               afin de pouvoir créer des applications web performantes. Mon
               objectif est de continuer à apprendre et me former au quotidien
               afin d&apos;acquérir la maitrise des outils les plus efficace
-              grâce à Une veille technique assidue.
+              grâce à une veille technique assidue.
             </p>
             <p className="pt-3  text-sm leading-6 text-gray-light lg:text-[0.95rem]">
               Je vous laisse parcourir mon portfolio afin de découvrir mes
