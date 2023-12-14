@@ -73,7 +73,7 @@ const Header = () => {
           </motion.div>
         </div>
       </div>
-      <div className="absolute bottom-10 left-1/2 translate-x-[-50%] ">
+      <div className="absolute bottom-10 left-1/2 translate-x-[-50%] hidden-xs">
         <a href="#about" title="Voir plus">
           <FontAwesomeIcon
             icon={faChevronDown}

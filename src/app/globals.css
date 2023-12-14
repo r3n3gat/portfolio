@@ -51,3 +51,10 @@ body::-webkit-scrollbar-thumb,
   border-bottom: 1px solid #292929;
   transform: scaleX(1);
 }
+
+/* Règle pour masquer le chevron sur les petits écrans */
+@media screen and (max-width: 768px) {
+  .hidden-xs {
+    display: none;
+  }
+}
