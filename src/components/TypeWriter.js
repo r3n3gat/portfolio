@@ -23,9 +23,18 @@ const fadeInOut = keyframes`
 `;
 
 const randomPosition = () => {
-  const x = Math.random() * 100;
-  const y = Math.random() * 100;
-  return { top: `${y}%`, left: `${x}%` };
+  let x, y;
+  if (window.innerWidth < 768) {
+    x = Math.random() * 70; // Réduire pour les mobiles
+    y = Math.random() * 70;
+  } else if (window.innerWidth < 1024) {
+    x = Math.random() * 80; // Réduire pour les tablettes
+    y = Math.random() * 80;
+  } else {
+    x = Math.random() * 85; // Légère réduction pour les ordinateurs
+    y = Math.random() * 85;
+  }
+  return { top: `${y}vh`, left: `${x}vw` };
 };
 
 const textStyle = (animationDelay) => css`
@@ -36,14 +45,27 @@ const textStyle = (animationDelay) => css`
     infinite;
   font-family: "Doctor Glitch", sans-serif;
 
-  @media (min-width: 768px) {
-    font-size: 2rem; // Taille moyenne pour les tablettes
+  @media (max-width: 320px) {
+    font-size: 0.75rem;
   }
 
-  @media (min-width: 1024px) {
-    font-size: 3rem; // Taille plus grande pour les écrans d'ordinateur
+  @media (min-width: 321px) and (max-width: 375px) {
+    font-size: 1.25rem;
+  }
+
+  @media (min-width: 376px) and (max-width: 768px) {
+    font-size: 1.75rem;
+  }
+
+  @media (min-width: 769px) and (max-width: 1024px) {
+    font-size: 2.5rem;
+  }
+
+  @media (min-width: 1025px) {
+    font-size: 3rem;
   }
 `;
+
 const TypeWriter = () => {
   const [elements, setElements] = useState([]);
 
