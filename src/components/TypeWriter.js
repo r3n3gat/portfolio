@@ -35,16 +35,15 @@ const textStyle = (animationDelay) => css`
   animation: ${fadeInOut} ${animationDuration}s ease-in-out ${animationDelay}s
     infinite;
   font-family: "Doctor Glitch", sans-serif;
-  font-size: 36px;
-  font-weight: medium;
+
   @media (min-width: 768px) {
-    font-size: 5xl;
+    font-size: 2rem; // Taille moyenne pour les tablettes
   }
+
   @media (min-width: 1024px) {
-    font-size: 6xl;
+    font-size: 3rem; // Taille plus grande pour les écrans d'ordinateur
   }
 `;
-
 const TypeWriter = () => {
   const [elements, setElements] = useState([]);
 
