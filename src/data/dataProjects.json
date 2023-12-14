@@ -9,7 +9,7 @@
     "website": "https://r3n3gat.github.io/Projet5/",
     "tags": ["HTML5", "CSS3", "Javascript"],
     "img_cover": "img/mockup/projet4.webp",
-    "img_info": "img/banner/banner-printit.png"
+    "img_info": "img/banner/banner-printit.webp"
   },
   {
     "id": "2",
@@ -29,7 +29,7 @@
       "Accessibilité"
     ],
     "img_cover": "img/mockup/projet8.webp",
-    "img_info": "img/banner/banner-nina.jpg"
+    "img_info": "img/banner/banner-nina.webp"
   },
   {
     "id": "3",
@@ -40,7 +40,7 @@
     "github": "https://github.com/r3n3gat/724events",
     "tags": ["Débogage", "Optimisation", "Tests Unitaires", "React Dev Tools"],
     "img_cover": "img/mockup/projet9.webp",
-    "img_info": "img/banner/banner-77events.png"
+    "img_info": "img/banner/banner-77events.webp"
   },
   {
     "id": "4",
@@ -59,7 +59,7 @@
       "Animations CSS"
     ],
     "img_cover": "img/mockup/projet7.webp",
-    "img_info": "img/banner/banner_kasa.png"
+    "img_info": "img/banner/banner_kasa.webp"
   },
   {
     "id": "5",
@@ -78,7 +78,7 @@
       "Swagger"
     ],
     "img_cover": "img/mockup/projet5.webp",
-    "img_info": "img/banner/banner_sophieBluel.png"
+    "img_info": "img/banner/banner_sophieBluel.webp"
   },
   {
     "id": "6",
@@ -97,7 +97,7 @@
       "Swagger"
     ],
     "img_cover": "img/mockup/projet10.webp",
-    "img_info": "img/banner/banner_argent.png"
+    "img_info": "img/banner/banner_argent.webp"
   },
   {
     "id": "7",
@@ -117,7 +117,7 @@
       "Solutions techniques"
     ],
     "img_cover": "img/mockup/projet6.webp",
-    "img_info": "img/banner/banner-qwenta.png"
+    "img_info": "img/banner/banner-qwenta.webp"
   },
   {
     "id": "8",
@@ -129,7 +129,7 @@
     "website": "",
     "tags": ["HTML5", "CSS3", "Responsive Web Design", "Figma"],
     "img_cover": "img/mockup/projet2.webp",
-    "img_info": "img/banner/banner_booki.png"
+    "img_info": "img/banner/banner_booki.webp"
   },
   {
     "id": "9",
@@ -141,7 +141,7 @@
     "website": "",
     "tags": ["HTML5", "CSS3", "Responsive Web Design", "Animations"],
     "img_cover": "img/mockup/projet3.webp",
-    "img_info": "img/banner/banner_ohmyfood.png"
+    "img_info": "img/banner/banner_ohmyfood.webp"
   },
    {
     "id": "10",
@@ -153,6 +153,6 @@
     "website": "",
     "tags": ["HTML5", "CSS3"],
     "img_cover": "img/mockup/projet1.webp",
-    "img_info": "img/banner/banner-riding.png"
+    "img_info": "img/banner/banner-riding.webp"
   }
 ]

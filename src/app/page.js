@@ -1,6 +1,5 @@
 "use client";
 import React from "react";
-import Loader from "@/src/components/Loader";
 import About from "@/src/components/About";
 import Contact from "@/src/components/Contact";
 import Project from "@/src/components/Project";
@@ -14,7 +13,6 @@ import "../styles/custom-fonts.css";
 const Home = () => {
   return (
     <div>
-      <Loader />
       <ScrollToTopButton />
       <About />
       <Skills />

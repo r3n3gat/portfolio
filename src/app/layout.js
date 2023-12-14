@@ -24,14 +24,14 @@ export const metadata = {
   description:
     "Je suis  Stevi ENOTO,  passionné d'informatique et créateur d'applications web dynamiques.",
   icons: {
-    icon: "img/favicon/favicon-32x32.png",
-    shortcut: "img/favicon/favicon-16x16.png",
+    icon: "img/favicon/favicon-32x32.webp",
+    shortcut: "img/favicon/favicon-16x16.webp",
     apple: [
-      { url: "img/favicon/E_icon.png" },
+      { url: "img/favicon/E_icon.webp" },
       {
-        url: "img/favicon/E_icon.png",
+        url: "img/favicon/E_icon.webp",
         sizes: "180x180",
-        type: "image/png",
+        type: "image/webp",
       },
     ],
   },
@@ -44,12 +44,12 @@ export const metadata = {
     siteName: "Portfolio Stevi ENOTO, développeur web",
     images: [
       {
-        url: "/img/img-main-rs.png",
+        url: "/img/img-main-rs.webp",
         width: 800,
         height: 600,
       },
       {
-        url: "/img/img-main-rs.png",
+        url: "/img/img-main-rs.webp",
         width: 1800,
         height: 1600,
         alt: "Portfolio Stevi ENOTO, développeur web",
@@ -63,7 +63,7 @@ export const metadata = {
     site: "@r3n3gat",
     cardType: "summary_large_image",
     image: {
-      url: "/img/img-main-rs.png",
+      url: "/img/img-main-rs.webp",
       width: 1200,
       height: 630,
       alt: "Portfolio Stevi ENOTO, développeur web",

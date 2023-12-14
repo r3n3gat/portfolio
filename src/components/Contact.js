@@ -101,7 +101,7 @@ const Contact = () => {
                   className="border-[rgba(0, 0, 0, 0.1)] peer block w-full resize-none border-b border-solid bg-transparent py-2 pl-[7px] text-[0.8rem] placeholder-transparent outline-none"
                   placeholder="name"
                   required
-                  autocomplete="section-subject"
+                  autoComplete="section-subject"
                 />
                 <label
                   htmlFor="subject"
@@ -128,7 +128,7 @@ const Contact = () => {
                   className="border-[rgba(0, 0, 0, 0.1)] peer block w-full resize-none border-b border-solid bg-transparent py-2 pl-[7px] text-[0.8rem] placeholder-transparent  outline-none"
                   placeholder="email"
                   required
-                  autocomplete="email"
+                  autoComplete="email"
                 />
                 <label
                   htmlFor="email"
@@ -157,7 +157,7 @@ const Contact = () => {
                   className="border-[rgba(0, 0, 0, 0.1)] peer block w-full resize-none border-b border-solid bg-transparent py-2 pl-[7px] text-[0.8rem] placeholder-transparent outline-none"
                   placeholder="tel"
                   required
-                  autocomplete="tel"
+                  autoComplete="tel"
                 />
                 <label
                   htmlFor="tel"
@@ -184,7 +184,7 @@ const Contact = () => {
                   className="border-[rgba(0, 0, 0, 0.1)] peer block w-full resize-none border-b border-solid bg-transparent py-2 pl-[7px] text-[0.8rem] placeholder-transparent outline-none"
                   placeholder="objet"
                   required
-                  autocomplete="objet"
+                  autoComplete="objet"
                 />
                 <label
                   htmlFor="objet"

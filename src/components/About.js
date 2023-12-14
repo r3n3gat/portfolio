@@ -11,7 +11,7 @@ const About = () => {
     >
       <div className="my-24 md:flex md:gap-8 lg:my-32 lg:gap-12">
         <motion.img
-          src="/img/img-about.jpg"
+          src="/img/img-about.webp"
           alt="ordinateur portable de développeur montrant du code"
           className="m-auto h-[500px] rounded-[3px] object-cover md:m-0"
           initial={{ opacity: 0, y: 150 }}
@@ -63,12 +63,12 @@ const About = () => {
                 Redux
               </span>{" "}
               afin de pouvoir créer des applications web performantes. Je
-              continue d&apos;apprendre et me former au quotidient afin
+              continue d&apos;apprendre et me former au quotidien afin
               d&apos;acquérir la maitrise des outils les plus performants.
             </p>
             <p className="pt-3  text-sm leading-6 text-gray-light lg:text-[0.95rem]">
               Je vous laisse parcourir mon portfolio afin de découvrir mes
-              réalisations. Je reste disponible et vous repondrez si vous
+              réalisations. Je reste disponible et vous répondrez si vous
               vouliez en savoir plus ou collaborer avec moi.
             </p>
           </motion.div>

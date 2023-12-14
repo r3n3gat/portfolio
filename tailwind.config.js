@@ -11,6 +11,7 @@ module.exports = {
         kaushan: ["var(--font-kaushan)"],
         poppins: ["var(--font-poppins)"],
         autography: ["Autography"],
+        designer: ["DESIGNER"],
         "doctor-glitch": ["Doctor Glitch"],
       },
       colors: {
