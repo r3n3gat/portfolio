@@ -58,3 +58,21 @@ body::-webkit-scrollbar-thumb,
     display: none;
   }
 }
+
+@media (max-width: 320px) {
+  .skill-list li {
+    font-size: 0.75rem; /* Plus petite taille pour les très petits écrans */
+  }
+}
+
+@media (min-width: 321px) and (max-width: 768px) {
+  .skill-list li {
+    font-size: 1rem; /* Taille légèrement plus grande pour les écrans mobiles */
+  }
+}
+
+@media (min-width: 769px) {
+  .skill-list li {
+    font-size: 1.25rem; /* Taille pour les écrans de tablettes et de bureau */
+  }
+}

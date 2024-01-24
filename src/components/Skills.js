@@ -60,9 +60,9 @@ const Skills = () => {
           ))}
         </div>
 
-        <div className="flex w-full flex-row-reverse items-center justify-around gap-5 md:block md:w-[30%] lg:w-[30%] ">
+        <div className="flex w-full flex-row-reverse items-center justify-around gap-5 md:block md:w-[30%] lg:w-[30%]">
           <motion.ul
-            className="pb-0  md:border-b md:border-solid md:border-gray-dark md:pb-5 lg:pb-5"
+            className="skill-list pb-0  md:border-b md:border-solid md:border-gray-dark md:pb-5 lg:pb-5"
             initial={{ opacity: 0, scale: 0 }}
             whileInView={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1, delay: 0.4 }}
@@ -75,7 +75,7 @@ const Skills = () => {
           </motion.ul>
 
           <motion.ul
-            className="pt-0  md:pt-5"
+            className="skill-list pb-0  md:border-b md:border-solid md:border-gray-dark md:pb-5 lg:pb-5"
             initial={{ opacity: 0, scale: 0 }}
             whileInView={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1, delay: 0.5 }}
