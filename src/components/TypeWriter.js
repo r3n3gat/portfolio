@@ -8,7 +8,7 @@ const phrases = [
   "Créatif",
   "Curieux",
   "Codeur",
-  "polyvalent",
+  "Polyvalent",
   "Passionné",
   "Rigoureux",
   "Autonome",
@@ -23,18 +23,13 @@ const fadeInOut = keyframes`
 `;
 
 const randomPosition = () => {
-  let x, y;
-  if (window.innerWidth < 768) {
-    x = Math.random() * 50; // Réduire pour les mobiles
-    y = Math.random() * 50;
-  } else if (window.innerWidth < 1024) {
-    x = Math.random() * 80; // Réduire pour les tablettes
-    y = Math.random() * 80;
-  } else {
-    x = Math.random() * 85; // Légère réduction pour les ordinateurs
-    y = Math.random() * 85;
-  }
-  return { top: `${y}vh`, left: `${x}vw` };
+  const padding = 50; // Marge de sécurité
+  const maxWidth = window.innerWidth - padding;
+  const maxHeight = window.innerHeight - padding;
+  const x = Math.random() * maxWidth;
+  const y = Math.random() * maxHeight;
+
+  return { top: `${y}px`, left: `${x}px` };
 };
 
 const textStyle = (animationDelay) => css`
@@ -44,26 +39,11 @@ const textStyle = (animationDelay) => css`
   animation: ${fadeInOut} ${animationDuration}s ease-in-out ${animationDelay}s
     infinite;
   font-family: "Doctor Glitch", sans-serif;
-
-  @media (max-width: 320px) {
-    font-size: 0.75rem;
-  }
-
-  @media (min-width: 321px) and (max-width: 375px) {
-    font-size: 1.25rem;
-  }
-
-  @media (min-width: 376px) and (max-width: 768px) {
-    font-size: 1.75rem;
-  }
-
-  @media (min-width: 769px) and (max-width: 1024px) {
-    font-size: 2.5rem;
-  }
-
-  @media (min-width: 1025px) {
-    font-size: 3rem;
-  }
+  font-size: clamp(
+    1rem,
+    2vw,
+    3rem
+  ); // Taille adaptable selon la largeur de l'écran
 `;
 
 const TypeWriter = () => {
@@ -76,6 +56,22 @@ const TypeWriter = () => {
         delay: (index * animationDuration) / phrases.length,
       }))
     );
+
+    const handleResize = () => {
+      // Réinitialiser les éléments lors du redimensionnement
+      setElements(
+        phrases.map((phrase, index) => ({
+          text: phrase,
+          delay: (index * animationDuration) / phrases.length,
+        }))
+      );
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
   }, []);
 
   return (
@@ -84,6 +80,7 @@ const TypeWriter = () => {
         position: relative;
         height: 40rem;
         width: 100%;
+        overflow: hidden;
       `}
     >
       {elements.map((element, index) => (

@@ -46,7 +46,7 @@ const About = () => {
             </p>
             <p className="pt-3 text-sm leading-6 text-gray-light lg:text-[0.95rem]">
               Après l&apos;obtention du diplôme de développeur Web chez
-              OpenCLassrooms, j&apos;ai pu affinier mes compétences, entre
+              OpenCLassrooms, j&apos;ai pu affiner mes compétences, entre
               autres, sur{" "}
               <span className="inline-block pt-1 leading-4 text-gray-dark shadow-[inset_0px_-6px_0px] shadow-blue-ultra-light">
                 React,
@@ -64,7 +64,7 @@ const About = () => {
               </span>{" "}
               afin de pouvoir créer des applications web performantes. Mon
               objectif est de continuer à apprendre et me former au quotidien
-              afin d&apos;acquérir la maitrise des outils les plus efficace
+              afin d&apos;acquérir la maitrise des outils les plus efficaces
               grâce à une veille technique assidue.
             </p>
             <p className="pt-3  text-sm leading-6 text-gray-light lg:text-[0.95rem]">
