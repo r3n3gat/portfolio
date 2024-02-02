@@ -23,7 +23,7 @@ const SectionCTA = () => {
         transition={{ duration: 0.4, delay: 0.3 }}
       >
         <a
-          href="/CV_STEVI_ENOTO.pdf"
+          // href="/CV_STEVI_ENOTO.pdf"
           target="_blank"
           rel="noopener noreferrer"
           className="group rounded border-2 border-solid border-transparent bg-blue-global px-3 py-2 text-sm font-sm uppercase tracking-wider text-off-white transition-all duration-300 ease-in hover:border-2 hover:border-solid hover:border-blue-global hover:bg-black hover:text-blue-global md:px-4 md:text-base"

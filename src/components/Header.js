@@ -63,7 +63,7 @@ const Header = () => {
             viewport={{ once: false }}
           >
             <a
-              href="/CV_STEVI_ENOTO.pdf"
+              // href="/CV_STEVI_ENOTO.pdf"
               target="_blank"
               rel="noopener noreferrer"
               title="Voir le CV pdf"
