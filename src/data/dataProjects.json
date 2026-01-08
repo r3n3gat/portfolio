@@ -1,158 +1,235 @@
 [
   {
     "id": "1",
-    "title": "Print It!",
-    "client": "Startup d'impression.",
-    "presentation": "Print it ! est un site d'impression en ligne permettant aux entreprises de commander des supports de communication et produits évènementiels.",
-    "overview": "Le but de cette mission était de transformer une page statique sans élément graphique dynamiques en une page dynamique avec javascript et de surtout modifier la bannière existante par un carrousel avec des buletts points et des flèches de défilement ainsi que la mise en place d'une boucle infinie sur le carrousel.",
-    "github": "https://github.com/r3n3gat/Projet5",
-    "website": "https://r3n3gat.github.io/Projet5/",
-    "tags": ["HTML5", "CSS3", "Javascript"],
-    "img_cover": "img/mockup/projet4.webp",
-    "img_info": "img/banner/banner-printit.webp"
+    "title": "EpicEvents (CRM sécurisé)",
+    "client": "",
+    "presentation": "Impact : mini-CRM exploitable (API + CLI) avec rôles, auth JWT et observabilité Sentry.",
+    "overview": "Responsabilités :\n- Conception / implémentation\n- Qualité (tests, lint) et bonnes pratiques\n- Livraison (docs, déploiement si applicable)",
+    "github": "https://github.com/r3n3gat/projet11_epic_events",
+    "website": "",
+    "tags": [
+      "Python",
+      "FastAPI",
+      "SQLAlchemy",
+      "Alembic",
+      "JWT",
+      "Click",
+      "Rich",
+      "Docker",
+      "Sentry"
+    ],
+    "img_cover": "img/projects/epicevents-cover.png",
+    "img_info": "img/projects/epicevents-banner.png"
   },
   {
     "id": "2",
-    "title": "Nina Carducci",
-    "client": "Nina Carducci, phototgraphe professionnelle",
-    "presentation": "Nina Carducci est une photographe professionnelle spécialisée dans les portraits et la photographie événementielle. Le site a pour but de présenter le portfolio de la photographe et de mettre en valeur ses réalisations.",
-    "overview": "Le projet visait à améliorer la performance globale du site, réduire le temps de chargement, et renforcer son référencement sur les moteurs de recherche. Mon intervention a inclus l'optimisation des images, la refonte du code et de la structure du site, la mise en place du référencement local avec Schema.org, et l'ajout des métas pour les réseaux sociaux. De plus, j'ai réalisé une optimisation du SEO du site, intégré le Rich Snippet pour une meilleure visibilité sur les moteurs de recherche, et effectué une analyse approfondie avec Wave pour garantir des performances optimales. Ces améliorations ont abouti à une expérience utilisateur plus fluide, une meilleure visibilité en ligne, et la possibilité d'attirer de nouveaux clients, notamment grâce à l'optimisation de Wave pour une meilleure accessibilité.",
-    "github": "https://github.com/r3n3gat/Projet_NinaCarducci",
+    "title": "SoftDesk Support API",
+    "client": "",
+    "presentation": "Impact : API de suivi projets/issues/comments avec permissions fines et docs Swagger/Redoc.",
+    "overview": "Responsabilités :\n- Conception / implémentation\n- Qualité (tests, lint) et bonnes pratiques\n- Livraison (docs, déploiement si applicable)",
+    "github": "https://github.com/r3n3gat/softdesk-support",
     "website": "",
     "tags": [
-      "Optimisation web",
-      "SEO",
-      "Référencement local",
-      "Rich Snippet",
-      "Wave",
-      "Lighthouse",
-      "Accessibilité"
+      "Python",
+      "Django",
+      "DRF",
+      "SimpleJWT",
+      "Swagger",
+      "Redoc",
+      "Pytest"
     ],
-    "img_cover": "img/mockup/projet8.webp",
-    "img_info": "img/banner/banner-nina.webp"
+    "img_cover": "img/projects/softdesk-support-cover.png",
+    "img_info": "img/projects/softdesk-support-banner.png"
   },
   {
     "id": "3",
-    "title": "724events",
-    "client": "L'agence évènementielle 724events.",
-    "presentation": "724events, une agence événementielle, avait lancé une refonte cruciale de son site vitrine. Après la validation du design, un développeur freelance a été recruté pour l'intégration, mais il a dû quitter le projet en cours. J'ai relevé le défi de résoudre les problèmes techniques et d'optimiser le site pour répondre pleinement aux besoins de l'agence.",
-    "overview": "Ma mission a été d'effectuer un débogage complet et d'optimiser le site web de 724events. J'ai commencé par une analyse approfondie du code source existant, identifiant ainsi les problèmes techniques qui entravaient les performances du site. Mon objectif était de garantir que le site soit fluide et réactif pour les visiteurs. Pour atteindre cet objectif, j'ai utilisé des tests unitaires pour vérifier chaque composant du site. Les React Dev Tools ont été essentielles pour analyser et optimiser le code React. Grâce à ces outils, j'ai pu cibler les zones spécifiques nécessitant des améliorations. En parallèle, j'ai finalisé le cahier de recette, créant des scénarios détaillés pour vérifier que chaque fonctionnalité du site fonctionnait comme prévu. Cela incluait des tests de navigation, de formulaire, de performance, et bien d'autres. Mon travail a permis d'assurer que le site réponde aux normes de qualité les plus élevées, offrant ainsi une expérience optimale aux utilisateurs.",
-    "github": "https://github.com/r3n3gat/724events",
-    "tags": ["Débogage", "Optimisation", "Tests Unitaires", "React Dev Tools"],
-    "img_cover": "img/mockup/projet9.webp",
-    "img_info": "img/banner/banner-77events.webp"
+    "title": "OC Lettings (Django prod)",
+    "client": "",
+    "presentation": "Impact : application Django stabilisée et prête prod (tests, lint, bonnes pratiques).",
+    "overview": "Responsabilités :\n- Conception / implémentation\n- Qualité (tests, lint) et bonnes pratiques\n- Livraison (docs, déploiement si applicable)",
+    "github": "https://github.com/r3n3gat/Python-OC-Lettings-FR",
+    "website": "",
+    "tags": [
+      "Python",
+      "Django",
+      "Tests",
+      "Lint",
+      "SQLite"
+    ],
+    "img_cover": "img/projects/oc-lettings-cover.png",
+    "img_info": "img/projects/oc-lettings-banner.png"
   },
   {
     "id": "4",
-    "title": "Kasa",
-    "client": "startup spécialisée dans la location d'appartements entre particuliers.",
-    "presentation": "J'ai travaillé en tant que développeur front-end sur le projet Kasa, pour une refonte totale du site, incluant une transition de ASP.NET à une stack Javascript moderne. Mon rôle était de concevoir une plateforme web en utilisant React pour le côté front-end, et Node.js pour le côté backend, ainsi que des maquettes fournies par le designer.",
-    "overview": "L'objectif était de moderniser la plateforme existante, en React, pour optimiser l'expérience utilisateur sur différentes tailles d'écran. J'ai enrichi l'interactivité du site en intégrant des animations CSS tout en introduisant des éléments avancés, comme la création d'un carrousel pour afficher les images des logements, l'implémentation d'un collapse pour améliorer l'UX, et la gestion dynamique des fiches logements à partir de données internes. De plus, j'ai utilisé Sass pour améliorer la gestion des styles.",
-    "github": "https://github.com/r3n3gat/kasa",
+    "title": "Scraper Books to Scrape",
+    "client": "",
+    "presentation": "Impact : pipeline ETL (CSV + images) avec structure modulaire et dossiers horodatés.",
+    "overview": "Responsabilités :\n- Conception / implémentation\n- Qualité (tests, lint) et bonnes pratiques\n- Livraison (docs, déploiement si applicable)",
+    "github": "https://github.com/r3n3gat/projet_2",
     "website": "",
     "tags": [
-      "React",
-      "Node.js",
-      "Sass",
-      "Responsive Web Design",
-      "Figma",
-      "Animations CSS"
+      "Python",
+      "Requests",
+      "BeautifulSoup",
+      "Pandas",
+      "ETL",
+      "Images"
     ],
-    "img_cover": "img/mockup/projet7.webp",
-    "img_info": "img/banner/banner_kasa.webp"
+    "img_cover": "img/projects/books-scraper-cover.png",
+    "img_info": "img/projects/books-scraper-banner.png"
   },
   {
     "id": "5",
-    "title": "Sophie Bluel",
-    "client": "Agence ArchiWebos",
-    "presentation": "En tant que développeur front-end, j'ai aidé une équipe à finaliser le nouveau site internet d'une architecte d'intérieur. J'étais chargée de développer plusieurs fonctionnalités clés pour le site.",
-    "overview": "Mon rôle a inclus la création de la page de présentation des travaux de l'architecte, avec des options de filtrage par catégorie, le développement de la page de connexion sécurisée de l'administrateur en utilisant JWT (JSON Web Tokens) pour l'authentification, ainsi que la conception d'une modale permettant à l'architecte d'ajouter ou de supprimer des projets. J'ai utilisé JavaScript pour générer dynamiquement les éléments en communiquant avec une API, ce qui a permis de récupérer, ajouter et supprimer des travaux. Tout au long du projet, nous avons utilisé un tableau Kanban détaillé pour organiser notre travail de manière efficace.",
-    "github": "https://github.com/r3n3gat/Portfolio-architecte-sophie-bluel",
+    "title": "Site vitrine (ce portfolio)",
+    "client": "",
+    "presentation": "Impact : vitrine orientée conversion (hero clair, projets filtrables, contact).",
+    "overview": "Responsabilités :\n- Conception / implémentation\n- Qualité (tests, lint) et bonnes pratiques\n- Livraison (docs, déploiement si applicable)",
+    "github": "https://github.com/r3n3gat/portfolio",
+    "website": "https://www.enotodigitalconseil.fr",
     "tags": [
-      "Node.js",
-      "Figma",
-      "HTML5",
-      "CSS3",
-      "JavaScript",
-      "JWT",
-      "Swagger"
+      "Next.js",
+      "React",
+      "Tailwind",
+      "SEO",
+      "UX"
     ],
-    "img_cover": "img/mockup/projet5.webp",
-    "img_info": "img/banner/banner_sophieBluel.webp"
+    "img_cover": "img/projects/portfolio-site-cover.png",
+    "img_info": "img/projects/portfolio-site-banner.png"
   },
   {
     "id": "6",
     "title": "ArgentBank",
-    "client": "Banque en ligne qui souhaite évoluer dans le secteur bancaire",
-    "presentation": "En tant que développeuse front-end chez Argent Bank, ma mission principale était de créer un tableau de bord utilisateur avec un système d'authentification en utilisant React et Redux. Cette tâche impliquait la migration d'un site web existant en HTML/CSS vers cette nouvelle plateforme.",
-    "overview": "En tant que membre de l'équipe Argent Bank, j'ai joué un rôle central dans la mise en place de l'authentification utilisateur avec JWT (JSON Web Tokens) et Axios pour des appels API sécurisés. J'ai également dirigé la gestion des données via Redux, en permettant notamment aux utilisateurs de récupérer leurs informations en se connectant mais également pouvoir en modifier certaines s'ils le souhaitent. L'utilisation de Swagger a facilité la conception et la documentation des API, accélérant le développement de nouvelles fonctionnalités et renforçant la sécurité, les performances et l'expérience utilisateur dans l'application Argent Bank. Mon rôle comprenait aussi la définition des routes pour les transactions dans l'éditeur de Swagger, ce qui impliquait de choisir les méthodes HTTP appropriées, telles que GET, PUT ou DELETE, pour simplifier leur gestion future. J'ai également contribué au Green Code en optimisant les images pour améliorer les performances de l'application et en créant des composants réutilisables pour favoriser les bonnes pratiques de développement.",
+    "client": "",
+    "presentation": "Impact : dashboard avec authentification + Redux et appels API sécurisés.",
+    "overview": "Responsabilités :\n- Conception / implémentation\n- Qualité (tests, lint) et bonnes pratiques\n- Livraison (docs, déploiement si applicable)",
     "github": "https://github.com/r3n3gat/ArgentBank",
+    "website": "",
     "tags": [
       "React",
       "Redux",
-      "Green Code",
       "Axios",
       "JWT",
-      "MongoDB",
       "Swagger"
     ],
-    "img_cover": "img/mockup/projet10.webp",
-    "img_info": "img/banner/banner_argent.webp"
+    "img_cover": "img/projects/argentbank-cover.png",
+    "img_info": "img/projects/argentbank-banner.png"
   },
   {
     "id": "7",
-    "title": "Menu Maker",
-    "client": "Qwenta, entreprise spécialisée dans les solutions numériques pour la restauration.",
-    "presentation": "Au sein de l'agence Webgencia, j'ai pris en charge la préparation et la planification d'un projet de développement particulier : la création du \"Menu Maker\" pour l'entreprise Qwenta. Le \"Menu Maker\" est un outil novateur dédié aux restaurateurs, simplifiant la conception et la mise en page de leurs menus. ",
-    "overview": "J'ai dirigé la planification du projet \"Menu Maker\" en étroite collaboration avec le Product Owner, Soufiane. Mon rôle clé incluait la création d'un plan de développement précis, l'identification des spécifications techniques essentielles, et la mise en place d'une méthodologie agile. J'ai également préparé une présentation détaillée pour la réunion de validation du projet avec John, le chef de projet de Qwenta, en mettant en avant la solution technique retenue et les spécifications techniques. En parallèle, j'ai effectué une veille technologique pour étayer nos choix techniques en identifiant des sources pertinentes et en organisant l'information. Enfin, j'ai géré le projet en utilisant un tableau Kanban pour suivre l'avancement des tâches.",
+    "title": "Nina Carducci (SEO & perf)",
+    "client": "",
+    "presentation": "Impact : SEO/performance/accessibilité améliorés via audits et optimisations.",
+    "overview": "Responsabilités :\n- Conception / implémentation\n- Qualité (tests, lint) et bonnes pratiques\n- Livraison (docs, déploiement si applicable)",
+    "github": "https://github.com/r3n3gat/Projet_NinaCarducci",
+    "website": "",
     "tags": [
-      "Méthode agile",
-      "Scrum",
-      "Kanban",
-      "Notion",
-      "Flipboard",
-      "Outil de veille",
-      "Planification de projet",
-      "Spécifications techniques",
-      "Solutions techniques"
+      "SEO",
+      "Lighthouse",
+      "Schema.org",
+      "Accessibilité"
     ],
-    "img_cover": "img/mockup/projet6.webp",
-    "img_info": "img/banner/banner-qwenta.webp"
+    "img_cover": "img/projects/nina-carducci-cover.png",
+    "img_info": "img/projects/nina-carducci-banner.png"
   },
   {
     "id": "8",
-    "title": "Booki",
-    "client": "Entreprise souhaitant développer un site web pour la recherche d'hébergements et d'activités.",
-    "presentation": "Booki est un projet web qui vise à simplifier la recherche d'hébergements et d'activités dans la ville de choix de l'utilisateur. Mon rôle en tant que développeuse Front-End était de prendre les maquettes fournies par l'UI designer, et de les intégrer en utilisant HTML et CSS.",
-    "overview": "Le principal défi était de rendre le projet compatible avec diverses tailles d'écran tout en respectant les spécifications de conception. J'ai utilisé flexbox pour créer une mise en page adaptable, garantissant ainsi une expérience utilisateur uniforme sur tous les appareils. J'ai travaillé en étroite collaboration avec les concepteurs pour intégrer harmonieusement les éléments visuels dans la mise en page, assurant ainsi une présentation esthétique et fonctionnelle sur les écrans larges de bureau, les tablettes et les smartphones.",
-    "github": "https://github.com/r3n3gat/projet-booki-in-progress",
+    "title": "724events (debug)",
+    "client": "",
+    "presentation": "Impact : stabilisation d’une refonte React (bugs corrigés, navigation fiabilisée).",
+    "overview": "Responsabilités :\n- Conception / implémentation\n- Qualité (tests, lint) et bonnes pratiques\n- Livraison (docs, déploiement si applicable)",
+    "github": "https://github.com/r3n3gat/724events",
     "website": "",
-    "tags": ["HTML5", "CSS3", "Responsive Web Design", "Figma"],
-    "img_cover": "img/mockup/projet2.webp",
-    "img_info": "img/banner/banner_booki.webp"
+    "tags": [
+      "React",
+      "Debug",
+      "Tests",
+      "Recette"
+    ],
+    "img_cover": "img/projects/724events-cover.png",
+    "img_info": "img/projects/724events-banner.png"
   },
   {
     "id": "9",
+    "title": "Kasa",
+    "client": "",
+    "presentation": "Impact : SPA React responsive (UI composants, navigation, UX).",
+    "overview": "Responsabilités :\n- Conception / implémentation\n- Qualité (tests, lint) et bonnes pratiques\n- Livraison (docs, déploiement si applicable)",
+    "github": "https://github.com/r3n3gat/kasa",
+    "website": "",
+    "tags": [
+      "React",
+      "Sass",
+      "UI",
+      "Responsive"
+    ],
+    "img_cover": "img/projects/kasa-cover.png",
+    "img_info": "img/projects/kasa-banner.png"
+  },
+  {
+    "id": "10",
+    "title": "Sophie Bluel (admin CRUD)",
+    "client": "",
+    "presentation": "Impact : zone admin sécurisée + CRUD via API et JWT.",
+    "overview": "Responsabilités :\n- Conception / implémentation\n- Qualité (tests, lint) et bonnes pratiques\n- Livraison (docs, déploiement si applicable)",
+    "github": "https://github.com/r3n3gat/Portfolio-architecte-sophie-bluel",
+    "website": "",
+    "tags": [
+      "JavaScript",
+      "JWT",
+      "API",
+      "CRUD"
+    ],
+    "img_cover": "img/projects/sophie-bluel-cover.png",
+    "img_info": "img/projects/sophie-bluel-banner.png"
+  },
+  {
+    "id": "11",
+    "title": "Print It!",
+    "client": "",
+    "presentation": "Impact : carrousel JS interactif (boucle, navigation, bullets).",
+    "overview": "Responsabilités :\n- Conception / implémentation\n- Qualité (tests, lint) et bonnes pratiques\n- Livraison (docs, déploiement si applicable)",
+    "github": "https://github.com/r3n3gat/Projet5",
+    "website": "https://r3n3gat.github.io/Projet5/",
+    "tags": [
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ],
+    "img_cover": "img/projects/print-it-cover.png",
+    "img_info": "img/projects/print-it-banner.png"
+  },
+  {
+    "id": "12",
+    "title": "Booki",
+    "client": "",
+    "presentation": "Impact : intégration responsive fidèle aux maquettes.",
+    "overview": "Responsabilités :\n- Conception / implémentation\n- Qualité (tests, lint) et bonnes pratiques\n- Livraison (docs, déploiement si applicable)",
+    "github": "https://github.com/r3n3gat/projet-booki-in-progress",
+    "website": "",
+    "tags": [
+      "HTML",
+      "CSS",
+      "Responsive",
+      "Figma"
+    ],
+    "img_cover": "img/projects/booki-cover.png",
+    "img_info": "img/projects/booki-banner.png"
+  },
+  {
+    "id": "13",
     "title": "Oh My Food!",
-    "client": "Startup de restauration.",
-    "presentation": "OhMyFood est une startup de restauration qui souhaite développer un site répertoriant les menus de restaurants gastronomiques. Mon rôle en tant que développeuse était de créer le site en respectant les maquettes fournies par l'équipe UX designer.",
-    "overview": "Le projet a été conçu en adoptant une approche 'mobile first', ce qui signifie que j'ai priorisé l'optimisation de l'expérience utilisateur sur les appareils mobiles. Cette stratégie garantit que les utilisateurs bénéficient d'une expérience fluide et réactive, quel que soit l'appareil qu'ils utilisent, allant des smartphones aux ordinateurs de bureau. De plus, pour rendre le site encore plus attrayant, j'ai intégré des animations fluides et naturelles. Ces animations ont été soigneusement créées pour améliorer l'interactivité du site, offrant ainsi aux visiteurs une expérience engageante et immersive.",
+    "client": "",
+    "presentation": "Impact : site mobile-first avec animations CSS.",
+    "overview": "Responsabilités :\n- Conception / implémentation\n- Qualité (tests, lint) et bonnes pratiques\n- Livraison (docs, déploiement si applicable)",
     "github": "https://github.com/r3n3gat/Projet4_Ohmyfood",
     "website": "",
-    "tags": ["HTML5", "CSS3", "Responsive Web Design", "Animations"],
-    "img_cover": "img/mockup/projet3.webp",
-    "img_info": "img/banner/banner_ohmyfood.webp"
-  },
-   {
-    "id": "10",
-    "title": "Riding Cities",
-    "client": "Riding Cities - Ecole de skate-board",
-    "presentation": " En tant que développeur front-end, j'ai pu poser les bases de leur site \"Riding Cities\" afin de completer leurs offres. Pour ce faire je devais juste améliorer leur interface graphique et créer les sections manquantes.",
-    "overview": " Dans ce projet mon travail a consisté à créer une section supplémentaires et ensuite arranger le CSS le moderniser de façon à avoir un rendu plus agréable pour l'utilisateur.Il m'a fallu ensuite créer des boutons et les rattacher via l'attribut Href aux bons documents.Le besoin était donc la mise en place de technologies HTML 5 et CSS 3 afin de rendre le site riding cities plus moderne et complet.",
-    "github": "",
-    "website": "",
-    "tags": ["HTML5", "CSS3"],
-    "img_cover": "img/mockup/projet1.webp",
-    "img_info": "img/banner/banner-riding.webp"
+    "tags": [
+      "HTML",
+      "CSS",
+      "Animations",
+      "Mobile-first"
+    ],
+    "img_cover": "img/projects/ohmyfood-cover.png",
+    "img_info": "img/projects/ohmyfood-banner.png"
   }
 ]

@@ -1,6 +1,6 @@
 import "./globals.css";
-import Header from "@/src/components/Header";
-import Footer from "@/src/components/Footer";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 import { Kaushan_Script, Poppins } from "next/font/google";
 import "@fortawesome/fontawesome-svg-core/styles.css";
 import { config } from "@fortawesome/fontawesome-svg-core";
@@ -19,70 +19,52 @@ export const poppins = Poppins({
   variable: "--font-poppins",
 });
 
+export const viewport = {
+  width: "device-width",
+  initialScale: 1,
+  themeColor: "#000000",
+};
+
 export const metadata = {
-  title: "Stevi ENOTO | Portfolio - développeur web front-end",
-  description:
-    "Je suis  Stevi ENOTO,  passionné d'informatique et créateur d'applications web dynamiques.",
-  icons: {
-    icon: "img/favicon/favicon-32x32.webp",
-    shortcut: "img/favicon/favicon-16x16.webp",
-    apple: [
-      { url: "img/favicon/E_icon.webp" },
-      {
-        url: "img/favicon/E_icon.webp",
-        sizes: "180x180",
-        type: "image/webp",
-      },
-    ],
+  metadataBase: new URL("https://enotodigitalconseil.fr"),
+  title: {
+    default: "Stevi ENOTO | Développeur full-stack Python | Web & Mobile",
+    template: "%s | Stevi ENOTO",
   },
-  metadataBase: new URL("https://www.stevi-enoto.web"),
+  description:
+    "Développeur full-stack spécialisé Python (Django/DRF). Applications web (React/Next.js) et mobile (Flutter). API, auth JWT, tests, Docker, CI/CD.",
+  alternates: { canonical: "/" },
+  icons: {
+    icon: [
+      { url: "/img/favicon/favicon-32x32.webp", sizes: "32x32", type: "image/webp" },
+      { url: "/img/favicon/favicon-16x16.webp", sizes: "16x16", type: "image/webp" }
+    ],
+    apple: [{ url: "/img/favicon/E_icon.webp", sizes: "180x180", type: "image/webp" }],
+  },
+  manifest: "/img/favicon/site.webmanifest",
   openGraph: {
-    title: "Stevi ENOTO | Portfolio - développeur web front-end",
+    title: "Stevi ENOTO | Développeur full-stack Python | Web & Mobile",
     description:
-      "Je suis  Stevi ENOTO,  passionné d'informatique et créateur d'applications web dynamiques.",
-    url: "https://www.stevi-enoto.web",
-    siteName: "Portfolio Stevi ENOTO, développeur web",
+      "Spécialisé Python (Django/DRF). Applications web & mobile, APIs sécurisées, tests, Docker, CI/CD.",
+    url: "/",
+    siteName: "ENOTO DIGITAL CONSEIL",
     images: [
-      {
-        url: "/img/img-main-rs.webp",
-        width: 800,
-        height: 600,
-      },
-      {
-        url: "/img/img-main-rs.webp",
-        width: 1800,
-        height: 1600,
-        alt: "Portfolio Stevi ENOTO, développeur web",
-      },
+      { url: "/img/img-main-rs.webp", width: 1200, height: 630, alt: "Portfolio Stevi ENOTO" }
     ],
     locale: "fr_FR",
     type: "website",
   },
   twitter: {
-    handle: "@r3n3gat",
+    card: "summary_large_image",
     site: "@r3n3gat",
-    cardType: "summary_large_image",
-    image: {
-      url: "/img/img-main-rs.webp",
-      width: 1200,
-      height: 630,
-      alt: "Portfolio Stevi ENOTO, développeur web",
-    },
+    creator: "@r3n3gat",
+    images: ["/img/img-main-rs.webp"],
   },
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="fr" className="scroll-smooth">
-      <head>
-        <link rel="manifest" href="img/favicon/site.webmanifest" />
-        <meta
-          name="viewport"
-          content="width=device-width, initial-scale=1, minimum-scale=1"
-        />
-        <meta name="theme-color" content="#000000" />{" "}
-        {/* Ajoutez cette ligne */}
-      </head>
       <body
         className={`${kaushan.variable} ${poppins.variable} overflow-x-hidden bg-off-white font-poppins text-gray-global`}
       >

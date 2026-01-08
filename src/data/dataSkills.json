@@ -1,71 +1,18 @@
 [
-  {
-    "id": "1",
-    "name": "Sass",
-    "title": "Sass",
-    "img": "/img/icons/icons_skills/sass.svg"
-  },
+  { "id": "1", "name": "Python", "title": "Python", "img": "/img/icons/icons_skills/python.png" },
+  { "id": "2", "name": "Django", "title": "Django", "img": "/img/icons/icons_skills/django.png" },
+  { "id": "3", "name": "DRF", "title": "Django REST Framework", "img": "/img/icons/icons_skills/drf.png" },
+  { "id": "4", "name": "SQL", "title": "PostgreSQL / MySQL", "img": "/img/icons/icons_skills/postgresql.png" },
+  { "id": "5", "name": "Docker", "title": "Docker", "img": "/img/icons/icons_skills/docker.png" },
+  { "id": "6", "name": "CI/CD", "title": "GitHub Actions", "img": "/img/icons/icons_skills/github-actions.png" },
+  { "id": "7", "name": "Flutter", "title": "Flutter", "img": "/img/icons/icons_skills/flutter.png" },
 
-  {
-    "id": "2",
-    "name": "ES-JS",
-    "title": "Javascript",
-    "img": "/img/icons/icons_skills/javascript.png"
-  },
+  { "id": "8", "name": "React", "title": "React", "img": "/img/icons/icons_skills/react.webp" },
+  { "id": "9", "name": "Next", "title": "Next.js", "img": "/img/icons/icons_skills/next-js.png" },
+  { "id": "10", "name": "JS", "title": "JavaScript", "img": "/img/icons/icons_skills/javascript.png" },
+  { "id": "11", "name": "Tailwind", "title": "Tailwind CSS", "img": "/img/icons/icons_skills/tailwind.png" },
+  { "id": "12", "name": "Sass", "title": "Sass", "img": "/img/icons/icons_skills/sass.svg" },
 
-  {
-    "id": "3",
-    "name": "React",
-    "title": "React",
-    "img": "/img/icons/icons_skills/react.webp"
-  },
-
-  {
-    "id": "4",
-    "name": "Node js",
-    "title": "Node js",
-    "img": "/img/icons/icons_skills/nodejs.webp"
-  },
-
-  {
-    "id": "5",
-    "name": "Redux",
-    "title": "Redux",
-    "img": "/img/icons/icons_skills/redux.png"
-  },
-
-  {
-    "id": "6",
-    "name": "Figma",
-    "title": "Figma",
-    "img": "/img/icons/icons_skills/figma.png"
-  },
-
-  {
-    "id": "7",
-    "name": "Tailwind",
-    "title": "Tailwind",
-    "img": "/img/icons/icons_skills/tailwind.png"
-  },
-
-  {
-    "id": "8",
-    "name": "Next JS",
-    "title": "Next JS",
-    "img": "/img/icons/icons_skills/next-js.png"
-  },
-
-  {
-    "id": "9",
-    "name": "Vs code",
-    "title": "Visual Studio Code",
-    "img": "/img/icons/icons_skills/vscode.webp"
-  },
-
-  {
-    "id": "10",
-    "name": "RWD",
-    "title": "Responsive Web Design",
-    "img": "/img/icons/icons_skills/responsive.webp"
-  }
+  { "id": "13", "name": "Git", "title": "Git", "img": "/img/icons/icons_skills/git.png" },
+  { "id": "14", "name": "VS Code", "title": "Visual Studio Code", "img": "/img/icons/icons_skills/vscode.webp" }
 ]

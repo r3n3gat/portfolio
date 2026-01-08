@@ -9,64 +9,51 @@ import { motion } from "framer-motion";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
+const floatingLabel =
+  "label absolute left-0 top-2 inline-block text-[0.8rem] text-gray-light transition-all duration-[400ms] " +
+  "peer-focus:-top-4 peer-focus:text-gray-dark " +
+  "peer-[&:not(:placeholder-shown)]:-top-4 peer-[&:not(:placeholder-shown)]:text-gray-dark";
+
 const Contact = () => {
-  const [isSubmitting, setIsSubmitting] = useState(false); //Indique si le formulaire est en cours de soumission.
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
   const [formData, setFormData] = useState({
     name: "",
     email: "",
     subject: "",
     tel: "",
     message: "",
-  }); // stocke les données du formulaire
+  });
 
-  // Gère le changement de valeur des champs du formulaire
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setFormData({
-      ...formData,
-      [name]: value,
-    });
+    setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
-  // Soumet le formulaire
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    console.log(formData);
-
     try {
       setIsSubmitting(true);
+
       const response = await fetch("/api/contact", {
         method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
+        headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),
       });
 
       if (response.ok) {
-        console.log("Message envoyé avec succès !");
-        setFormData({
-          name: "",
-          email: "",
-          subject: "",
-          tel: "",
-          message: "",
-        });
+        setFormData({ name: "", email: "", subject: "", tel: "", message: "" });
         toast.success("Votre message a été envoyé avec succès !");
-      } else {
-        console.error(
-          "Une erreur s'est produite lors de l'envoi du formulaire :",
-          error
-        );
-        toast.error("Une erreur s'est produite lors de l'envoi du formulaire.");
+        return;
       }
-    } catch (error) {
+
+      const errText = await response.text().catch(() => "");
+      console.error("Contact API error:", response.status, errText);
       toast.error("Une erreur s'est produite lors de l'envoi du formulaire.");
-      console.error(
-        "Une erreur s'est produite lors de l'envoi du formulaire :",
-        error
-      );
+    } catch (error) {
+      console.error("Contact submit error:", error);
+      toast.error("Une erreur s'est produite lors de l'envoi du formulaire.");
     } finally {
       setIsSubmitting(false);
     }
@@ -81,9 +68,10 @@ const Contact = () => {
       <h2 className="mb-[30px] mt-12 font-kaushan text-3xl text-gray-dark md:text-[2.4rem] lg:mt-24 lg:text-[2.4rem]">
         Me contacter
       </h2>
-      <div className="lg:flex lg:gap-20 ">
+
+      <div className="lg:flex lg:gap-20">
         <form className="mb-10 mt-14 lg:w-3/5" onSubmit={handleSubmit}>
-          <div className="lg:flex lg:gap-[50px] ">
+          <div className="lg:flex lg:gap-[50px]">
             <div className="row1 lg:w-1/2">
               <motion.div
                 className="input_container relative mb-16 lg:mb-[60px]"
@@ -94,19 +82,16 @@ const Contact = () => {
               >
                 <input
                   type="text"
-                  id="subject"
-                  name="subject"
-                  value={formData.subject}
+                  id="name"
+                  name="name"
+                  value={formData.name}
                   onChange={handleChange}
-                  className="border-[rgba(0, 0, 0, 0.1)] peer block w-full resize-none border-b border-solid bg-transparent py-2 pl-[7px] text-[0.8rem] placeholder-transparent outline-none"
-                  placeholder="name"
+                  className="peer block w-full resize-none border-b border-solid border-[rgba(0,0,0,0.1)] bg-transparent py-2 pl-[7px] text-[0.8rem] placeholder-transparent outline-none"
+                  placeholder="Votre nom"
                   required
-                  autoComplete="section-subject"
+                  autoComplete="name"
                 />
-                <label
-                  htmlFor="subject"
-                  className="label peer-placeholder-show:text-[0.8rem]peer-placeholder-show:text-gray-dark peer-placeholder-show:top-2 ease absolute left-0 top-0 inline-block text-[0.8rem] text-gray-light transition-all duration-[400ms] peer-valid:-top-4 peer-valid:text-[0.8rem] peer-valid:text-gray-dark  peer-focus:-top-4 peer-focus:text-[0.8rem] peer-focus:text-gray-dark"
-                >
+                <label htmlFor="name" className={floatingLabel}>
                   Votre nom *
                 </label>
                 <div className="underline"></div>
@@ -125,16 +110,13 @@ const Contact = () => {
                   name="email"
                   value={formData.email}
                   onChange={handleChange}
-                  className="border-[rgba(0, 0, 0, 0.1)] peer block w-full resize-none border-b border-solid bg-transparent py-2 pl-[7px] text-[0.8rem] placeholder-transparent  outline-none"
-                  placeholder="email"
+                  className="peer block w-full resize-none border-b border-solid border-[rgba(0,0,0,0.1)] bg-transparent py-2 pl-[7px] text-[0.8rem] placeholder-transparent outline-none"
+                  placeholder="Votre email"
                   required
                   autoComplete="email"
                 />
-                <label
-                  htmlFor="email"
-                  className="label peer-placeholder-show:text-[0.8rem]peer-placeholder-show:text-gray-dark peer-placeholder-show:top-2 ease absolute left-0 top-0 inline-block text-[0.8rem] text-gray-light transition-all duration-[400ms] peer-valid:-top-4 peer-valid:text-[0.8rem] peer-valid:text-gray-dark peer-focus:-top-4 peer-focus:text-[0.8rem] peer-focus:text-gray-dark"
-                >
-                  Votre Email *
+                <label htmlFor="email" className={floatingLabel}>
+                  Votre email *
                 </label>
                 <div className="underline"></div>
               </motion.div>
@@ -154,16 +136,12 @@ const Contact = () => {
                   name="tel"
                   value={formData.tel}
                   onChange={handleChange}
-                  className="border-[rgba(0, 0, 0, 0.1)] peer block w-full resize-none border-b border-solid bg-transparent py-2 pl-[7px] text-[0.8rem] placeholder-transparent outline-none"
-                  placeholder="tel"
-                  required
+                  className="peer block w-full resize-none border-b border-solid border-[rgba(0,0,0,0.1)] bg-transparent py-2 pl-[7px] text-[0.8rem] placeholder-transparent outline-none"
+                  placeholder="Téléphone"
                   autoComplete="tel"
                 />
-                <label
-                  htmlFor="tel"
-                  className="label peer-placeholder-show:text-[0.8rem]peer-placeholder-show:text-gray-dark peer-placeholder-show:top-2 ease absolute left-0 top-0 inline-block text-[0.8rem] text-gray-light transition-all duration-[400ms] peer-valid:-top-4 peer-valid:text-[0.8rem] peer-valid:text-gray-dark  peer-focus:-top-4 peer-focus:text-[0.8rem] peer-focus:text-gray-dark"
-                >
-                  Téléphone
+                <label htmlFor="tel" className={floatingLabel}>
+                  Téléphone (optionnel)
                 </label>
                 <div className="under_line"></div>
               </motion.div>
@@ -177,19 +155,16 @@ const Contact = () => {
               >
                 <input
                   type="text"
-                  id="objet"
-                  name="subjet"
+                  id="subject"
+                  name="subject"
                   value={formData.subject}
                   onChange={handleChange}
-                  className="border-[rgba(0, 0, 0, 0.1)] peer block w-full resize-none border-b border-solid bg-transparent py-2 pl-[7px] text-[0.8rem] placeholder-transparent outline-none"
-                  placeholder="objet"
+                  className="peer block w-full resize-none border-b border-solid border-[rgba(0,0,0,0.1)] bg-transparent py-2 pl-[7px] text-[0.8rem] placeholder-transparent outline-none"
+                  placeholder="Objet"
                   required
-                  autoComplete="objet"
+                  autoComplete="off"
                 />
-                <label
-                  htmlFor="objet"
-                  className="label peer-placeholder-show:text-[0.8rem] peer-placeholder-show:text-gray-dark peer-placeholder-show:top-2 ease absolute left-0 top-0 inline-block text-[0.8rem] text-gray-light transition-all duration-[400ms] peer-valid:-top-4 peer-valid:text-[0.8rem] peer-valid:text-gray-dark  peer-focus:-top-4 peer-focus:text-[0.8rem] peer-focus:text-gray-dark"
-                >
+                <label htmlFor="subject" className={floatingLabel}>
                   Objet *
                 </label>
                 <div className="underline"></div>
@@ -198,7 +173,7 @@ const Contact = () => {
           </div>
 
           <motion.div
-            className="input_container relative "
+            className="input_container relative"
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
@@ -209,15 +184,11 @@ const Contact = () => {
               id="message"
               value={formData.message}
               onChange={handleChange}
-              className="border-[rgba(0, 0, 0, 0.1)] peer mb-14 block h-44 w-full resize-none border-b border-solid bg-transparent py-2 pl-[7px] text-[0.8rem] placeholder-transparent outline-none lg:h-[150px]"
+              className="peer mb-14 block h-44 w-full resize-none border-b border-solid border-[rgba(0,0,0,0.1)] bg-transparent py-2 pl-[7px] text-[0.8rem] placeholder-transparent outline-none lg:h-[150px]"
               placeholder="Message"
               required
             ></textarea>
-
-            <label
-              htmlFor="message"
-              className="label peer-placeholder-show:text-[0.8rem] peer-placeholder-show:text-gray-dark peer-placeholder-show:top-2 ease absolute left-0 top-0 inline-block text-[0.8rem] text-gray-light transition-all duration-[400ms] peer-valid:-top-4 peer-valid:text-[0.8rem] peer-valid:text-gray-dark  peer-focus:-top-4 peer-focus:text-[0.8rem] peer-focus:text-gray-dark"
-            >
+            <label htmlFor="message" className={floatingLabel}>
               Message *
             </label>
             <div className="underline"></div>
@@ -242,7 +213,7 @@ const Contact = () => {
           </motion.button>
         </form>
 
-        <div className="mb-5 mt-16  w-full rounded-lg border border-gray-100 bg-gray-100 px-4 py-8 shadow-md md:p-10 lg:mt-10 lg:w-2/5">
+        <div className="mb-5 mt-16 w-full rounded-lg border border-gray-100 bg-gray-100 px-4 py-8 shadow-md md:p-10 lg:mt-10 lg:w-2/5">
           <motion.h3
             className="mb-4 text-lg font-medium text-gray-dark"
             initial={{ opacity: 0 }}
@@ -250,22 +221,17 @@ const Contact = () => {
             transition={{ duration: 1 }}
             viewport={{ once: true }}
           >
-            Coordonnées <span className="text-blue-global">de Contact</span>
+            Coordonnées <span className="text-blue-global">de contact</span>
           </motion.h3>
 
           <motion.div
-            className=" group mt-8"
+            className="group mt-8"
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
             viewport={{ once: true }}
           >
-            <a
-              href="mailto:stevi.enoto@gmail.com"
-              target="blank"
-              title="Email"
-              className="flex items-center gap-4"
-            >
+            <a href="mailto:stevi.enoto@gmail.com" title="Email" className="flex items-center gap-4">
               <div className="inline-block bg-gray-200 p-3 text-xl transition-colors duration-500 group-hover:bg-blue-global group-hover:text-off-white lg:text-3xl">
                 <BsEnvelopeAtFill />
               </div>
@@ -281,23 +247,18 @@ const Contact = () => {
           <hr className="color-gray my-8" />
 
           <motion.div
-            className=" group mt-8"
+            className="group mt-8"
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.5 }}
             viewport={{ once: true }}
           >
-            <a
-              href="tel:0660162961"
-              title="Téléphone"
-              target="blank"
-              className="flex items-center gap-4"
-            >
+            <a href="tel:0660162961" title="Téléphone" className="flex items-center gap-4">
               <div className="inline-block bg-gray-200 p-3 text-xl transition-colors duration-500 group-hover:bg-blue-global group-hover:text-off-white lg:text-3xl">
                 <FaPhoneVolume />
               </div>
               <div>
-                <p className="text-sm md:text-base">Numéro de téléphone</p>
+                <p className="text-sm md:text-base">Téléphone</p>
                 <p className="text-sm text-blue-global transition-colors duration-200 group-hover:text-blue-light">
                   Contacter par téléphone
                 </p>
@@ -316,7 +277,8 @@ const Contact = () => {
           >
             <a
               href="https://www.google.com/maps?q=Versailles,+Yvelines"
-              target="blank"
+              target="_blank"
+              rel="noopener noreferrer"
               title="Localisation"
               className="flex items-center gap-4"
             >
@@ -325,11 +287,8 @@ const Contact = () => {
               </div>
               <div>
                 <p className="text-base">Localisation</p>
-                <p
-                  className="text-sm text-blue-global transition-colors duration-200 group-hover:text-blue-light"
-                  target="_blank"
-                >
-                  Versailles, Yvelynes
+                <p className="text-sm text-blue-global transition-colors duration-200 group-hover:text-blue-light">
+                  Versailles, Yvelines
                 </p>
               </div>
             </a>
