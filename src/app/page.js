@@ -1,11 +1,13 @@
 "use client";
+
 import React from "react";
-import About from "@/src/components/About";
-import Contact from "@/src/components/Contact";
-import Project from "@/src/components/Project";
-import ScrollToTopButton from "@/src/components/ScrollToTopButton";
-import SectionCTA from "@/src/components/SectionCTA";
-import Skills from "@/src/components/Skills";
+import About from "@/components/About";
+import Contact from "@/components/Contact";
+import Project from "@/components/Project";
+import ScrollToTopButton from "@/components/ScrollToTopButton";
+import SectionCTA from "@/components/SectionCTA";
+import Skills from "@/components/Skills";
+
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import "../styles/custom-fonts.css";
